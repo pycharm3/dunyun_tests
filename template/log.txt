@@ -1,0 +1,44 @@
+[{'name': 'JSESSIONID', 'path': '/', 'domain': '10.0.0.8', 'value': 'E78350C6D7AF1062D73C76DADEA8A763', 'secure': False, 'httpOnly': True}]
+http://10.0.0.8:8080/om/inventory/device/list
+.
+----------------------------------------------------------------------
+Ran 1 test in 21.603s
+
+OK
+https://www.zhihu.com/signup?next=%2F
+.
+----------------------------------------------------------------------
+Ran 1 test in 10.848s
+
+OK
+['log.txt', 'login.py', 'test.py', 'test_case.py', '__init__.py', '__pycache__']
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+Traceback (most recent call last):
+  File "D:/test_demo/Test_DemoOne/template/test_case.py", line 10, in <module>
+    s = pylist.split(".")[1]
+IndexError: list index out of range
+[{'httpOnly': True, 'secure': True, 'domain': '10.0.0.9', 'name': 'JSESSIONID', 'path': '/', 'value': '05D2B3809845F1C0D85751FB31849543'}]
+https://10.0.0.9/om/inventory/device/list
+.
+----------------------------------------------------------------------
+Ran 1 test in 23.128s
+
+OK
+https://www.zhihu.com/signup?next=%2F
+.
+----------------------------------------------------------------------
+Ran 1 test in 17.827s
+
+OK
+['log.txt', 'login.py', 'test.py', 'test_case.py', '__init__.py', '__pycache__']
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+另一个程序正在使用此文件，进程无法访问。
+Traceback (most recent call last):
+  File "D:/test_demo/Test_DemoOne/template/test_case.py", line 10, in <module>
+    s = pylist.split(".")[1]
+IndexError: list index out of range
