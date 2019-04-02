@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/3/11 9:26
 # @Author  : xuyun
-
+'''
+dunyun登录退出
+'''
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import time,unittest
@@ -20,6 +22,7 @@ class dunyun(unittest.TestCase):
         self.verificationErrors = []
 
     def test_login(self):
+        u"""敦云login&&logout"""
         driver =self.driver
         driver.get(self.base_url)
         # 调用登录模块

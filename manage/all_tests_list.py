@@ -3,12 +3,13 @@
 # @Author  : xuyun
 import sys
 sys.path.append("/template")
-from template import zhihu_login,jianshu_login
+from template import zhihu_login,jianshu_login,dunyun_login
 
 def caselist():
     alltestnames = [
         zhihu_login.ZhihuLogin,
         jianshu_login.JSlogin,
+        dunyun_login.dunyun,
     ]
     print("success read case list")
     return alltestnames

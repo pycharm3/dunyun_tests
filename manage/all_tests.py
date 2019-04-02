@@ -1,7 +1,22 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/3/13 12:26
 # @Author  : xuyun
-import unittest,time,smtplib,os
+import sys
+print(sys.path)
+sys.path.append('D:\\test_demo\\Test_DemoOne\\manage')
+sys.path.append('D:\\test_demo\\Test_DemoOne')
+sys.path.append('D:\\Django_project\\Test_DemoOne\\Scripts\\python35.zip')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner\\DLLs')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner\\lib')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner\\Scripts')
+sys.path.append('c:\\users\\administrator\\appdata\\local\\programs\\python\\python35\\Lib')
+sys.path.append('c:\\users\\administrator\\appdata\\local\\programs\\python\\python35\\DLLs')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner\\lib\\site-packages')
+sys.path.append('D:\\pycharm2018\\PyCharm 2018.1.4\\helpers\\pycharm_matplotlib_backend')
+sys.path.append('D:\\virtualenvwrapper\\HttpRunner\\lib\\ntpath.py')
+
+import unittest,time,smtplib,os,xmlrunner
 from HTML_TestRunner import HTMLTestReportCN
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -20,9 +35,10 @@ for test in alltestnames:
 # 定义测试报告命名规则
 writedata = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
 # 定义测试报告存放路径
-filename = 'D:/test_demo/Test_DemoOne/manage/TestReport/' + writedata + 'jianshu&zhihu.html'
+# filename = 'D:/test_demo/Test_DemoOne/manage/TestReport/' + writedata + 'jianshu&zhihu.html'
+# jenkins项目工作空间，例如：F:\jenkins\workspace\test\TestReport
+filename = 'F:/jenkins/workspace/test/TestReport/' + 'jianshu&zhihu.html'
 fp = open(filename,'wb')
-
 runner = HTMLTestReportCN.HTMLTestRunner(
     stream=fp,
     title=u'jianshu&zhihu',
@@ -30,4 +46,4 @@ runner = HTMLTestReportCN.HTMLTestRunner(
 )
 # 执行测试用例
 runner.run(testunit)
-xmlrunner.XMLTestRunner(verbosity=2,output='测试报告').run(smoke_tests)
+# xmlrunner.XMLTestRunner(verbosity=2,output='TestReport').run(testunit)

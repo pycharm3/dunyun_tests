@@ -42,3 +42,31 @@ Traceback (most recent call last):
   File "D:/test_demo/Test_DemoOne/template/test_case.py", line 10, in <module>
     s = pylist.split(".")[1]
 IndexError: list index out of range
+4555
+[{'secure': True, 'value': '8A0122B2005167CD4281C52A5AE1263D', 'domain': '10.0.0.9', 'name': 'JSESSIONID', 'httpOnly': True, 'path': '/'}]
+https://10.0.0.9/om/inventory/device/list
+
+
+用户中心
+用户资料
+密码修改
+
+
+运营管理
+设备管理
+项目管理
+Portal定制
+广告管理
+素材管理
+
+
+监控中心
+首页
+概览
+告警
+日志
+.
+----------------------------------------------------------------------
+Ran 1 test in 15.903s
+
+OK

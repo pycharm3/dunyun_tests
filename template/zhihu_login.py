@@ -24,7 +24,7 @@ class ZhihuLogin(unittest.TestCase):
         time.sleep(5)
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    unittest.main()
 
         # try:
         #     browser.find_element_by_id("kwsss").send_keys("selenium")

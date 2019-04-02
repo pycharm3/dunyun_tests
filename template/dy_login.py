@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import time,unittest
 
-# 分模块化登录模块
+# duyun分模块化登录模块
 def login(self,name='admin',pw='123456'):
     driver = self.driver
     driver.maximize_window()
